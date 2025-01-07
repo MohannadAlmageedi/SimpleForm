@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان - تأثير العلاقات الافتراضية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>استبيان شامل: تأثير العلاقات الافتراضية</h1>
+        <p>شكراً لمشاركتك في هذا الاستبيان الذي يهدف إلى دراسة تأثير العلاقات الافتراضية على الأداء الأكاديمي، الحياة
+            الاجتماعية، الصحة النفسية، المزاج، والسلوك.</p>
+        <form id="comprehensiveSurveyForm">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>المعلومات الشخصية</legend>
+                <label for="name">اسمك (اختياري):</label>
+                <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا">
+
+                <label for="age">عمرك:</label>
+                <input type="number" id="age" name="age" min="18" max="99" placeholder="اكتب عمرك">
+
+                <label for="gender">الجنس:</label>
+                <select id="gender" name="gender">
+                    <option value="male">ذكر</option>
+                    <option value="female">أنثى</option>
+                    <option value="other">آخر</option>
+                </select>
+            </fieldset>
+
+            <!-- Academic Impact -->
+            <fieldset>
+                <legend>الأداء الأكاديمي</legend>
+                <label for="relationships">هل تعتقد أن العلاقات الافتراضية تؤثر على أدائك الأكاديمي؟</label>
+                <select id="relationships" name="relationships">
+                    <option value="positive">إيجابياً</option>
+                    <option value="negative">سلبياً</option>
+                    <option value="no_effect">لا يوجد تأثير</option>
+                </select>
+
+                <label for="studyHours">كم ساعة تقضي يومياً في الدراسة؟</label>
+                <input type="number" id="studyHours" name="studyHours" min="0" max="24" placeholder="عدد الساعات">
+            </fieldset>
+
+            <!-- Social Life -->
+            <fieldset>
+                <legend>الحياة الاجتماعية</legend>
+                <label for="socialEffect">هل أثرت العلاقات الافتراضية على علاقاتك الاجتماعية الواقعية؟</label>
+                <select id="socialEffect" name="socialEffect">
+                    <option value="positive">إيجابياً</option>
+                    <option value="negative">سلبياً</option>
+                    <option value="no_effect">لا يوجد تأثير</option>
+                </select>
+
+                <label for="interactionFrequency">كم مرة تتفاعل مع الأصدقاء والعائلة يومياً؟</label>
+                <input type="number" id="interactionFrequency" name="interactionFrequency" min="0" max="24"
+                    placeholder="عدد المرات">
+            </fieldset>
+
+            <!-- Mental Health -->
+            <fieldset>
+                <legend>الصحة النفسية</legend>
+                <label for="stressLevel">هل تسبب لك العلاقات الافتراضية ضغطاً نفسياً؟</label>
+                <select id="stressLevel" name="stressLevel">
+                    <option value="never">أبداً</option>
+                    <option value="rarely">نادراً</option>
+                    <option value="sometimes">أحياناً</option>
+                    <option value="often">كثيراً</option>
+                </select>
+
+                <label for="selfEsteem">هل تؤثر العلاقات الافتراضية على احترامك لذاتك؟</label>
+                <select id="selfEsteem" name="selfEsteem">
+                    <option value="increase">ترفع احترام الذات</option>
+                    <option value="decrease">تقلل احترام الذات</option>
+                    <option value="no_effect">لا يوجد تأثير</option>
+                </select>
+            </fieldset>
+
+            <!-- Mood and Behavior -->
+            <fieldset>
+                <legend>المزاج والسلوك</legend>
+                <label for="moodChange">هل تؤثر العلاقات الافتراضية على مزاجك اليومي؟</label>
+                <select id="moodChange" name="moodChange">
+                    <option value="positive">تحسن المزاج</option>
+                    <option value="negative">تسوء المزاج</option>
+                    <option value="no_effect">لا يوجد تأثير</option>
+                </select>
+
+                <label for="behaviorChange">هل أثرت العلاقات الافتراضية على سلوكك اليومي؟</label>
+                <select id="behaviorChange" name="behaviorChange">
+                    <option value="positive">إيجابياً</option>
+                    <option value="negative">سلبياً</option>
+                    <option value="no_effect">لا يوجد تأثير</option>
+                </select>
+            </fieldset>
+
+            <!-- Additional Comments -->
+            <fieldset>
+                <legend>تعليقات إضافية</legend>
+                <label for="comments">يرجى كتابة أي ملاحظات أو اقتراحات:</label>
+                <textarea id="comments" name="comments" placeholder="اكتب ملاحظاتك هنا..."></textarea>
+            </fieldset>
+
+            <button type="submit">إرسال</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
